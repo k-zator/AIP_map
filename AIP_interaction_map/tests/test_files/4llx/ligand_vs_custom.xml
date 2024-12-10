@@ -1,0 +1,91 @@
+<ForceField>
+  <CustomNonbondedForce energy="n_zeros*SA*SAneg*SApos*ssip_charge1*ssip_charge2" bondCutoff="1">
+    <PerParticleParameter name="ssip_charge"/>
+    <PerParticleParameter name="fraction"/>
+    <PerParticleParameter name="isosurface"/>
+    <GlobalParameter name="SA" defaultValue="165.0113297251629"/>
+    <GlobalParameter name="SApos" defaultValue="93.2516993598786"/>
+    <GlobalParameter name="SAneg" defaultValue="71.75963036528431"/>
+    <GlobalParameter name="n_zeros" defaultValue="0"/>
+    <UseAttributeFromResidue name="ssip_charge"/>
+    <UseAttributeFromResidue name="fraction"/>
+    <UseAttributeFromResidue name="isosurface"/>
+    <Atom type="ligand-a1"/>
+    <Atom type="ligand-a2"/>
+    <Atom type="ligand-a3"/>
+    <Atom type="ligand-a4"/>
+    <Atom type="ligand-a5"/>
+    <Atom type="ligand-a6"/>
+    <Atom type="ligand-a7"/>
+    <Atom type="ligand-a8"/>
+    <Atom type="ligand-a9"/>
+    <Atom type="ligand-a10"/>
+    <Atom type="ligand-a11"/>
+    <Atom type="ligand-a12"/>
+    <Atom type="ligand-a13"/>
+    <Atom type="ligand-a14"/>
+    <Atom type="ligand-a15"/>
+    <Atom type="ligand-a16"/>
+    <Atom type="ligand-a17"/>
+    <Atom type="ligand-a18"/>
+    <Atom type="ssip"/>
+    <Atom type="protein-C"/>
+    <Atom type="protein-CA"/>
+    <Atom type="protein-CB"/>
+    <Atom type="protein-CC"/>
+    <Atom type="protein-CN"/>
+    <Atom type="protein-CR"/>
+    <Atom type="protein-CT"/>
+    <Atom type="protein-CV"/>
+    <Atom type="protein-CW"/>
+    <Atom type="protein-C*"/>
+    <Atom type="protein-H"/>
+    <Atom type="protein-HC"/>
+    <Atom type="protein-H1"/>
+    <Atom type="protein-HA"/>
+    <Atom type="protein-H4"/>
+    <Atom type="protein-H5"/>
+    <Atom type="protein-HO"/>
+    <Atom type="protein-HS"/>
+    <Atom type="protein-HP"/>
+    <Atom type="protein-N"/>
+    <Atom type="protein-NA"/>
+    <Atom type="protein-NB"/>
+    <Atom type="protein-N2"/>
+    <Atom type="protein-N3"/>
+    <Atom type="protein-O"/>
+    <Atom type="protein-O2"/>
+    <Atom type="protein-OH"/>
+    <Atom type="protein-S"/>
+    <Atom type="protein-SH"/>
+    <Atom type="protein-6+"/>
+    <Atom type="protein-6c"/>
+    <Atom type="protein-6d"/>
+    <Atom type="protein-6e"/>
+    <Atom type="protein-6h"/>
+    <Atom type="protein-6i"/>
+    <Atom type="protein-6j"/>
+    <Atom type="protein-6k"/>
+    <Atom type="protein-6q"/>
+    <Atom type="protein-6t"/>
+    <Atom type="protein-6C"/>
+    <Atom type="protein-6D"/>
+    <Atom type="protein-6E"/>
+    <Atom type="protein-6F"/>
+    <Atom type="protein-6H"/>
+    <Atom type="protein-6I"/>
+    <Atom type="protein-6J"/>
+    <Atom type="protein-6K"/>
+    <Atom type="protein-6L"/>
+    <Atom type="protein-6M"/>
+    <Atom type="protein-6N"/>
+    <Atom type="protein-6P"/>
+    <Atom type="protein-6Q"/>
+    <Atom type="protein-6R"/>
+    <Atom type="protein-6S"/>
+    <Atom type="protein-6T"/>
+    <Atom type="protein-6V"/>
+    <Atom type="protein-6W"/>
+    <Atom type="protein-6Y"/>
+  </CustomNonbondedForce>
+</ForceField>

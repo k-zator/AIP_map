@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www-hunter.ch.cam.ac.uk/xlst/ssip.xsl"?>
+<ssip:SSIPMolecule xmlns:cml="http://www.xml-cml.org/schema" xmlns:ssip="http://www-hunter.ch.cam.ac.uk/SSIP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ssip:ssipSoftwareVersion="5.1.0-SNAPSHOT" ssip:parameterVersion="1.0.0" xsi:schemaLocation="http://www.xml-cml.org/schema http://www-hunter.ch.cam.ac.uk/schema/cmlschema.xsd http://www-hunter.ch.cam.ac.uk/SSIP http://www-hunter.ch.cam.ac.uk/schema/SSIP.xsd">
+    <cml:molecule ssip:stdInChIKey="LELOWRISYMNNSU-UHFFFAOYSA-N" cml:id="LELOWRISYMNNSU-UHFFFAOYSA-N">
+        <cml:atomArray>
+            <cml:atom cml:elementType="C" cml:id="a1" cml:formalCharge="0" cml:x3="-0.02887835813819313" cml:y3="1.5667095851884584E-12" cml:z3="2.2877619013987683E-12" cml:sybyl="C.3" cml:aipAtomType="C.3"/>
+            <cml:atom cml:elementType="N" cml:id="a2" cml:formalCharge="0" cml:x3="1.1281807527677759" cml:y3="-7.527242388752521E-13" cml:z3="-1.0991532125299601E-12" cml:sybyl="N.1" cml:aipAtomType="N.1"/>
+            <cml:atom cml:elementType="H" cml:id="a3" cml:formalCharge="0" cml:x3="-1.0993023946295828" cml:y3="-8.139853463132061E-13" cml:z3="-1.1886086888688078E-12" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+        </cml:atomArray>
+        <cml:bondArray>
+            <cml:bond cml:atomRefs2="a1 a2" cml:order="3"/>
+            <cml:bond cml:atomRefs2="a1 a3" cml:order="1"/>
+        </cml:bondArray>
+    </cml:molecule>
+    <ssip:SurfaceInformation>
+        <ssip:Surfaces>
+            <ssip:Surface>
+                <ssip:TotalSurfaceArea ssip:unit="Å^2">51.1</ssip:TotalSurfaceArea>
+                <ssip:NegativeSurfaceArea ssip:unit="Å^2">27.6</ssip:NegativeSurfaceArea>
+                <ssip:PositiveSurfaceArea ssip:unit="Å^2">23.5</ssip:PositiveSurfaceArea>
+                <ssip:ElectronDensityIsosurface ssip:unit="e bohr^-3">0.002</ssip:ElectronDensityIsosurface>
+                <ssip:NumberOFMEPSPoints>2841</ssip:NumberOFMEPSPoints>
+                <ssip:VdWVolume ssip:unit="Å^3">0.0</ssip:VdWVolume>
+                <ssip:ElectrostaticPotentialMax ssip:unit="kJ mol^-1">0.0</ssip:ElectrostaticPotentialMax>
+                <ssip:ElectrostaticPotentialMin ssip:unit="kJ mol^-1">-0.0</ssip:ElectrostaticPotentialMin>
+            </ssip:Surface>
+        </ssip:Surfaces>
+    </ssip:SurfaceInformation>
+    <ssip:SSIPs>
+        <ssip:SSIP ssip:value="3.3944216808930787" ssip:nearestAtomID="a3"  ssip:aipAtomType="H.soft" cml:x3="-2.1796911429987307" cml:y3="-0.153703765390042" cml:z3="-0.131868324564555" ssip:isosurface="0.002" ssip:aipAreaFraction="1"/>
+        <ssip:SSIP ssip:value="0.0" ssip:nearestAtomID="a1"  ssip:aipAtomType="C.3" cml:x3="0.0" cml:y3="6.731613057885967E-29" cml:z3="1.3463226115771934E-28" ssip:isosurface="0.002" ssip:aipAreaFraction="1"/>
+        <ssip:SSIP ssip:value="0.0" ssip:nearestAtomID="a1"  ssip:aipAtomType="C.3" cml:x3="0.0" cml:y3="6.731613057885967E-29" cml:z3="1.3463226115771934E-28" ssip:isosurface="0.002" ssip:aipAreaFraction="1"/>
+        <ssip:SSIP ssip:value="-1.3614189921622835" ssip:nearestAtomID="a2"  ssip:aipAtomType="N.1" cml:x3="1.5929261798763057" cml:y3="-0.747252780844647" cml:z3="1.416003704331891" ssip:isosurface="0.002" ssip:aipAreaFraction="1"/>
+        <ssip:SSIP ssip:value="-3.7337650589546185" ssip:nearestAtomID="a2"  ssip:aipAtomType="N.1" cml:x3="2.8196648785081058" cml:y3="-0.20180174390615" cml:z3="-0.043956108188184996" ssip:isosurface="0.002" ssip:aipAreaFraction="1"/>
+    </ssip:SSIPs>
+</ssip:SSIPMolecule>

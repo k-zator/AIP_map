@@ -1,0 +1,31 @@
+COMPND    AB.pdb#1 
+ATOM      1  O1  cpA A   1     -14.325  -0.640   8.314  1.00  0.00           O  
+ATOM      2  O2  cpA A   1     -12.385   3.254   5.127  1.00  0.00           O  
+ATOM      3  N3  cpA A   1     -12.615   1.046   5.585  1.00  0.00           N  
+ATOM      4  N4  cpA A   1     -14.153   1.563   7.807  1.00  0.00           N  
+ATOM      5  C5  cpA A   1     -13.927   0.271   7.561  1.00  0.00           C  
+ATOM      6  C6  cpA A   1     -13.145  -0.091   6.318  1.00  0.00           C  
+ATOM      7  C7  cpA A   1     -12.876   2.335   5.812  1.00  0.00           C  
+ATOM      8  C8  cpA A   1     -13.818   2.680   6.942  1.00  0.00           C  
+ATOM      9  H9  cpA A   1     -11.989   0.833   4.814  1.00  0.00           H  
+ATOM     10  H10 cpA A   1     -14.675   1.789   8.650  1.00  0.00           H  
+ATOM     11  H11 cpA A   1     -12.319  -0.735   6.628  1.00  0.00           H  
+ATOM     12  H12 cpA A   1     -13.797  -0.692   5.675  1.00  0.00           H  
+ATOM     13  H13 cpA A   1     -13.353   3.467   7.537  1.00  0.00           H  
+ATOM     14  H14 cpA A   1     -14.723   3.112   6.501  1.00  0.00           H  
+CONECT    1    5    5                                                 
+CONECT    2    7    7                                                 
+CONECT    3    9    7    6                                            
+CONECT    4    8    5   10                                            
+CONECT    5    1    1    4    6                                       
+CONECT    6    3    5   12   11                                       
+CONECT    7    2    2    3    8                                       
+CONECT    8    4    7   14   13                                       
+CONECT    9    3                                                      
+CONECT   10    4                                                      
+CONECT   11    6                                                      
+CONECT   12    6                                                      
+CONECT   13    8                                                      
+CONECT   14    8                                                      
+MASTER        0    0    0    0    0    0    0    0   14    0   14    0
+END

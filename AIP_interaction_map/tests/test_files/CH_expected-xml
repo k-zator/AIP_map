@@ -1,0 +1,17 @@
+<ForceField>
+  <AtomTypes>
+    <Type class="H1" name="ligand-H1" element="H" mass="14.00672"/>
+    <Type class="C2" name="ligand-N2" element="N" mass="14.00672"/>
+    <Type class="ssip" name="ssip" mass="0.0"/>
+  </AtomTypes>
+  <Residues>
+    <Residue name="MOL">
+      <Atom name="N1" type="ligand-N1" ssip_charge="-1.276082830991334"/>
+      <Atom name="N2" type="ligand-N2" ssip_charge="-5.925737354184276"/>
+      <Bond atomName1="N1" atomName2="C7"/>
+      <Atom ssip_charge="2.393836812314535" name="M0" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M0" atomName1="H10" atomName2="N1" atomName3="C7" weight12="-0.6" weight13="-0.2" weightCross="1.0"/>
+    </Residue>
+  </Residues>
+</ForceField>
+

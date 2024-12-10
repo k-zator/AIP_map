@@ -1,0 +1,327 @@
+# Jmol state version 14.6.4_2016.11.05  2016-11-10 03:30;
+
+function _setWindowState() {
+# width 1844;
+# height 956;
+  stateVersion = 1406004;
+  background [xffffff];
+  axis1Color = "[xff0000]";
+  axis2Color = "[x008000]";
+  axis3Color = "[x0000ff]";
+  set ambientPercent 45;
+  set diffusePercent 84;
+  set specular true;
+  set specularPercent 22;
+  set specularPower 40;
+  set specularExponent 6;
+  set celShading false;
+  set celShadingPower 10;
+  set zShadePower 3;
+}
+
+function _setFileState() {
+
+  set allowEmbeddedScripts false;
+  set appendNew false;
+  set appletProxy "";
+  set applySymmetryToBonds false;
+  set autoBond true;
+  set bondRadiusMilliAngstroms 150;
+  set bondTolerance 0.45;
+  set defaultLattice {0.0 0.0 0.0};
+  set defaultLoadFilter "";
+  set defaultLoadScript "";
+  set defaultStructureDssp true;
+  set defaultVDW Auto;
+  set forceAutoBond false;
+  #set defaultDirectory "/home/kate";;
+  #set loadFormat "https://files.rcsb.org/download/%FILE.pdb";
+  #set loadLigandFormat "https://files.rcsb.org/ligands/download/%FILE.cif";
+  #set smilesUrlFormat "https://cactus.nci.nih.gov/chemical/structure/%FILE/file?format=sdf&get3d=true";
+  #set nihResolverFormat "https://cactus.nci.nih.gov/chemical/structure/%FILE";
+  #set pubChemFormat "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/%FILE/SDF?record_type=3d";
+  #set edsUrlFormat "http://eds.bmc.uu.se/eds/dfs/%c2%c3/%file/%file.omap";
+  #set edsUrlFormatDiff "http://eds.bmc.uu.se/eds/dfs/%c2%c3/%file/%file_diff.omap";
+  #set edsUrlCutoff "http://eds.bmc.uu.se/eds/dfs/%c2%c3/%file/%file.sfdat";
+  set bondingVersion 0;
+  set legacyAutoBonding false;
+  set legacyHAddition false;
+  set legacyJavaFloat false;
+  set minBondDistance 0.4;
+  set minimizationCriterion  0.001;
+  set minimizationSteps  100;
+  set multipleBondBananas false;
+  set pdbAddHydrogens false;
+  set pdbGetHeader false;
+  set pdbSequential false;
+  set percentVdwAtom 23;
+  set smallMoleculeMaxAtoms 40000;
+  set smartAromatic true;
+  load /*file*/".//builds/ch/hunter/hunter_scoring/AIP_interaction_map/tests/test_files//new_jmol.pdb";
+}
+
+function _setParameterState() {
+;
+  set defaultanglelabel "%VALUE %UNITS";
+  set defaultcolorscheme "jmol";
+  set defaultdistancelabel "%VALUE %UNITS";
+  set defaultdrawarrowscale 0.5;
+  set defaultlabelpdb "%m%r";
+  set defaultlabelxyz "%a";
+  set defaultlattice "{0 0 0}";
+  set defaultloadfilter "";
+  set defaultloadscript "";
+  set defaulttorsionlabel "%VALUE %UNITS";
+  set defaulttranslucent 0.5;
+  set defaultvdw "Auto";
+  set allowembeddedscripts true;
+  set allowmoveatoms false;
+  set allowrotateselected false;
+  set animationmode "once";
+  set appletproxy "";
+  set applysymmetrytobonds false;
+  set atomtypes "";
+  set autobond true;
+  set autofps false;
+  set axes window;
+  set axesmode 0;
+  set axesoffset 0.0;
+  set axesscale 2.0;
+  set backbonesteps false;
+  set bondmodeor false;
+  set bondradiusmilliangstroms 150;
+  set bondtolerance 0.45;
+  set cartoonbaseedges false;
+  set cartoonfancy false;
+  set cartoonladders false;
+  set cartoonrockets false;
+  set chaincasesensitive false;
+  set dataseparator "~~~";
+  set defaultstructuredssp true;
+  set delaymaximumms 0;
+  set dipolescale 1.0;
+  set disablepopupmenu false;
+  set displaycellparameters true;
+  set dotdensity 3;
+  set dotscale 1;
+  set dotsselectedonly false;
+  set dotsurface true;
+  set dragselected false;
+  set drawfontsize 14.0;
+  set drawhover false;
+  set dsspcalculatehydrogenalways true;
+  set edsurlformatdiff "http://eds.bmc.uu.se/eds/dfs/%c2%c3/%file/%file_diff.omap";
+  set ellipsoidarcs false;
+  set ellipsoidarrows false;
+  set ellipsoidaxes false;
+  set ellipsoidaxisdiameter 0.02;
+  set ellipsoidball true;
+  set ellipsoiddotcount 200;
+  set ellipsoiddots false;
+  set ellipsoidfill false;
+  set energyunits "kJ";
+  set forceautobond false;
+  set gestureswipefactor 1.0;
+  set greyscalerendering false;
+  set hbondsangleminimum 90.0;
+  set hbondsbackbone false;
+  set hbondsdistancemaximum 3.25;
+  set hbondsrasmol true;
+  set hbondssolid false;
+  set helixstep 1;
+  set helppath "http://chemapps.stolaf.edu/jmol/docs/index.htm";
+  set hermitelevel 0;
+  set hiddenlinesdashed false;
+  set hidenameinpopup false;
+  set hidenavigationpoint false;
+  set highresolution false;
+  set hoverdelay 0.5;
+  set isosurfacekey false;
+  set isosurfacepropertysmoothing true;
+  set isosurfacepropertysmoothingpower 7;
+  set justifymeasurements false;
+  set loadatomdatatolerance 0.01;
+  set measureallmodels false;
+  set measurementlabels true;
+  set meshscale 1;
+  set messagestylechime false;
+  set minbonddistance 0.4;
+  set minimizationcriterion 0.001;
+  set minimizationrefresh true;
+  set minimizationsilent false;
+  set minimizationsteps 100;
+  set minpixelselradius 6;
+  set modulationscale 1.0;
+  set monitorenergy false;
+  set multiplebondbananas false;
+  set multiplebondradiusfactor 0.0;
+  set multiplebondspacing -1.0;
+  set navigationperiodic false;
+  set navigationspeed 5.0;
+  set nmrpredictformat "http://www.nmrdb.org/service/predictor?POST?molfile=";
+  set nmrurlformat "http://www.nmrdb.org/new_predictor?POST?molfile=";
+  set partialdots false;
+  set particleradius 20.0;
+  set pdbaddhydrogens false;
+  set pdbgetheader false;
+  set pdbsequential false;
+  set percentvdwatom 23;
+  set pickingspinrate 10;
+  set pointgroupdistancetolerance 0.2;
+  set pointgrouplineartolerance 8.0;
+  set propertyatomnumbercolumncount 0;
+  set propertyatomnumberfield 0;
+  set propertycolorscheme "roygb";
+  set propertydatacolumncount 0;
+  set propertydatafield 0;
+  set quaternionframe "p";
+  set rangeselected false;
+  set ribbonaspectratio 16;
+  set ribbonborder false;
+  set rocketbarrels false;
+  set selecthetero true;
+  set selecthydrogen true;
+  set sheetsmoothing 1.0;
+  set showhiddenselectionhalos false;
+  set showhydrogens true;
+  set showmeasurements true;
+  set showmodulationvectors false;
+  set showmultiplebonds true;
+  set shownavigationpointalways false;
+  set showunitcelldetails true;
+  set slabbyatom false;
+  set slabbymolecule false;
+  set smallmoleculemaxatoms 40000;
+  set smartaromatic true;
+  set solventprobe false;
+  set solventproberadius 1.2;
+  set ssbondsbackbone false;
+  set starwidth 0.05;
+  set stereodegrees -5;
+  set strandcountformeshribbon 7;
+  set strandcountforstrands 5;
+  set strutdefaultradius 0.3;
+  set strutlengthmaximum 7.0;
+  set strutsmultiple false;
+  set strutspacing 6;
+  set tracealpha true;
+  set translucent true;
+  set twistedsheets false;
+  set usenumberlocalization true;
+  set vectorscale 1.0;
+  set vectorscentered false;
+  set vectorsymmetry false;
+  set vectortrail 0;
+  set vibrationscale 0.5;
+  set waitformoveto true;
+  set wireframerotation false;
+  set zdepth 0;
+  set zoomheight false;
+  set zoomlarge true;
+  set zslab 50;
+}
+
+function _setModelState() {
+  data "append example"|1|IP|VS 3.04 15.45 42.59|end "append example";show data
+  data "append example"|1|IP|VS 2.11 16.64 44.44|end "append example";show data
+  data "append example"|1|IP|VS 6.3 12.81 39.52|end "append example";show data
+  data "append example"|1|IP|VS 4.39 10.34 47.33|end "append example";show data
+  data "append example"|1|IP|VS 6.37 12.06 41.62|end "append example";show data
+  data "append example"|1|IP|VS 6.37 12.06 41.62|end "append example";show data
+  data "append example"|1|IP|VS 4.3 16.77 42.43|end "append example";show data
+  data "append example"|1|IP|VS 7.78 12.03 45.63|end "append example";show data
+  data "append example"|1|IP|VS 5.39 14.58 44.96|end "append example";show data
+  data "append example"|1|IP|VS 5.39 14.58 44.96|end "append example";show data
+  data "append example"|1|IP|VS 5.68 14.82 41.36|end "append example";show data
+  data "append example"|1|IP|VS 6.16 14.19 44.06|end "append example";show data
+  data "append example"|1|IP|VS 2.49 12.35 40.41|end "append example";show data
+  data "append example"|1|IP|VS 2.07 12.94 44.56|end "append example";show data
+  data "append example"|1|IP|VS 1.48 14.35 43.14|end "append example";show data
+  data "append example"|1|IP|VS 2.04 13.19 42.11|end "append example";show data
+  data "append example"|1|IP|VS 3.31 10.97 42.19|end "append example";show data
+  data "append example"|1|IP|VS 3.11 11.16 44.16|end "append example";show data
+
+  select ({398 399});
+  color atoms opaque [x0a9396];
+  color TRANSLUCENT 70;
+  spacefill 0.9;
+  select ({});
+  color atoms opaque [x94d2bd];
+  color TRANSLUCENT 70;
+  spacefill 0.9;
+  select ({401 411 412 413 414 415});
+  color atoms opaque [xe9d8a6];
+  color TRANSLUCENT 70;
+  spacefill 0.9;
+  select ({400 402 403 404 405 406 407 408 409 410});
+  color atoms opaque [xb8b8d0];
+  color TRANSLUCENT 140;
+  spacefill 0.2;
+  measures delete;
+  draw objh17 ({297}) ({398}) diameter 0.02 translucent 200 [x000000];
+  draw objh16 ({290}) ({399}) diameter 0.02 translucent 200 [x000000];
+  draw objh15 ({249}) ({400}) diameter 0.02 translucent 200 [x000000];
+  draw objh14 ({112}) ({401}) diameter 0.02 translucent 200 [x000000];
+  draw objh13 ({255}) ({402}) diameter 0.02 translucent 200 [x000000];
+  draw objh12 ({255}) ({403}) diameter 0.02 translucent 200 [x000000];
+  draw objh11 ({291}) ({404}) diameter 0.02 translucent 200 [x000000];
+  draw objh10 ({27}) ({405}) diameter 0.02 translucent 200 [x000000];
+  draw objh9 ({211}) ({406}) diameter 0.02 translucent 200 [x000000];
+  draw objh8 ({211}) ({407}) diameter 0.02 translucent 200 [x000000];
+  draw objh7 ({254}) ({408}) diameter 0.02 translucent 200 [x000000];
+  draw objh6 ({215}) ({409}) diameter 0.02 translucent 200 [x000000];
+  draw objh5 ({313}) ({410}) diameter 0.02 translucent 200 [x000000];
+  draw objh4 ({316}) ({411}) diameter 0.02 translucent 200 [x000000];
+  draw objh3 ({314}) ({412}) diameter 0.02 translucent 200 [x000000];
+  draw objh2 ({312}) ({413}) diameter 0.02 translucent 200 [x000000];
+  draw objh1 ({315}) ({414}) diameter 0.02 translucent 200 [x000000];
+  draw objh0 ({317}) ({415}) diameter 0.02 translucent 200 [x000000];
+  draw obj17 ({5}) ({398}) diameter 0.02 translucent 200 [x000000];
+  draw obj16 ({16}) ({399}) diameter 0.02 translucent 200 [x000000];
+  draw obj15 ({15}) ({400}) diameter 0.02 translucent 200 [x000000];
+  draw obj14 ({10}) ({401}) diameter 0.02 translucent 200 [x000000];
+  draw obj13 ({2}) ({402}) diameter 0.02 translucent 200 [x000000];
+  draw obj12 ({12}) ({403}) diameter 0.02 translucent 200 [x000000];
+  draw obj11 ({5}) ({404}) diameter 0.02 translucent 200 [x000000];
+  draw obj10 ({11}) ({405}) diameter 0.02 translucent 200 [x000000];
+  draw obj9 ({8}) ({406}) diameter 0.02 translucent 200 [x000000];
+  draw obj8 ({6}) ({407}) diameter 0.02 translucent 200 [x000000];
+  draw obj7 ({3}) ({408}) diameter 0.02 translucent 200 [x000000];
+  draw obj6 ({1}) ({409}) diameter 0.02 translucent 200 [x000000];
+  draw obj5 ({14}) ({410}) diameter 0.02 translucent 200 [x000000];
+  draw obj4 ({6}) ({411}) diameter 0.02 translucent 200 [x000000];
+  draw obj3 ({5}) ({412}) diameter 0.02 translucent 200 [x000000];
+  draw obj2 ({3}) ({413}) diameter 0.02 translucent 200 [x000000];
+  draw obj1 ({2}) ({414}) diameter 0.02 translucent 200 [x000000];
+  draw obj0 ({1}) ({415}) diameter 0.02 translucent 200 [x000000];
+;
+  select *; set measures nanometers;
+  font measures 15.0 SansSerif Plain;
+  select measures ({0:6});
+  measure "2:%VALUE %UNITS//nanometers";
+  select measures ({null});
+
+  hover "%U";
+
+  frank on;
+  font frank 16.0 SansSerif Plain;
+  select *;
+  set fontScaling false;
+}
+
+function _setState() {
+  initialize;
+  set refreshing false;
+  _setWindowState;
+  _setFileState;
+  _setParameterState;
+  _setModelState;
+  _setPerspectiveState;
+  _setSelectionState;
+  set refreshing true;
+  set antialiasDisplay false;
+  set antialiasTranslucent true;
+  set antialiasImages true;
+}
+
+_setState;

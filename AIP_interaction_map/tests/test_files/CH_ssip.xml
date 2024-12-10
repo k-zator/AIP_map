@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ssip:SSIPMolecule xmlns:cml="http://www.xml-cml.org/schema" xmlns:ssip="http://www-hunter.ch.cam.ac.uk/SSIP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ssip:ssipSoftwareVersion="6.0.1-SNAPSHOT" ssip:parameterVersion="1.0.0" xsi:schemaLocation="http://www.xml-cml.org/schema http://www-hunter.ch.cam.ac.uk/schema/cmlschema.xsd http://www-hunter.ch.cam.ac.uk/SSIP http://www-hunter.ch.cam.ac.uk/schema/SSIP.xsd">
+    <cml:molecule xmlns:ssip="http://www-hunter.ch.cam.ac.uk/SSIP" xmlns:cml="http://www.xml-cml.org/schema" cml:id="UHOVQNZJYSORNB-UHFFFAOYSA-N" ssip:stdInChIKey="UHOVQNZJYSORNB-UHFFFAOYSA-N">
+	  <cml:atomArray>
+	    <cml:atom cml:id="H0" cml:elementType="H" cml:x3="-0.5409999936819077" cml:y3="-0.807500034570694" cml:z3="2.160000056028366"/>
+	    <cml:atom cml:id="C1" cml:elementType="C" cml:x3="-1.077900007367134" cml:y3="-0.7346999645233154" cml:z3="1.2088000029325485"/>
+	  </cml:atomArray>
+	  <cml:bondArray>
+	    <cml:bond cml:atomRefs2="H0 C1" cml:order="1"/>
+	  </cml:bondArray>
+    </cml:molecule>
+      <ssip:SurfaceInformation>
+        <ssip:Surfaces>
+            <ssip:Surface>
+                <ssip:TotalSurfaceArea ssip:unit="Å^2">112.08488091376881</ssip:TotalSurfaceArea>
+                <ssip:NegativeSurfaceArea ssip:unit="Å^2">46.75830560569285</ssip:NegativeSurfaceArea>
+                <ssip:PositiveSurfaceArea ssip:unit="Å^2">65.32657530807569</ssip:PositiveSurfaceArea>
+                <ssip:ElectronDensityIsosurface ssip:unit="e bohr^-3">0.002</ssip:ElectronDensityIsosurface>
+                <ssip:NumberOFMEPSPoints>9006</ssip:NumberOFMEPSPoints>
+                <ssip:VdWVolume ssip:unit="Å^3">94.05537375084413</ssip:VdWVolume>
+                <ssip:ElectrostaticPotentialMax ssip:unit="kJ mol^-1">70.36338981600001</ssip:ElectrostaticPotentialMax>
+                <ssip:ElectrostaticPotentialMin ssip:unit="kJ mol^-1">-75.45948457842</ssip:ElectrostaticPotentialMin>
+            </ssip:Surface>
+        </ssip:Surfaces>
+    </ssip:SurfaceInformation>
+    <ssip:SSIPs>
+       <ssip:SSIP ssip:value="1.0" ssip:nearestAtomID="H0" cml:x3="-0.50" cml:y3="-0.8" cml:z3="3.0"/>
+    </ssip:SSIPs>
+</ssip:SSIPMolecule>
+

@@ -1,0 +1,27 @@
+name: scoring
+channels:
+  - anaconda
+  - rdkit
+  - conda-forge
+  - omnia
+  - defaults
+dependencies:
+  - ipykernel=5.1.4
+  - ipython=7.14.0
+  - ipython_genutils=0.2.0
+  - ipywidgets=7.6.5
+  - lxml=4.4.1
+  - mdtraj=1.9.3
+  - mendeleev=0.6.0
+  - networkx=2.6.3
+  - notebook=6.4.8
+  - numexpr=2.7.1
+  - numpy=1.15.4
+  - numpy-base=1.15.4
+  - openbabel=3.0.0
+  - openmm=7.4.0
+  - pandas=1.0.3
+  - pip=21.2.2
+  - python=3.7.11
+  - rdkit=2020.09.1.0
+  - wheel=0.37.1

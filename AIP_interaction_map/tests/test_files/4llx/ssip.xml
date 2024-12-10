@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ssip:SSIPMolecule xmlns:ssip="http://www-hunter.ch.cam.ac.uk/SSIP" xmlns:cml="http://www.xml-cml.org/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ssip:ssipSoftwareVersion="0.0.0-newssip" ssip:parameterVersion="3.0.0" xsi:schemaLocation="http://www.xml-cml.org/schema http://www-hunter.ch.cam.ac.uk/schema/cmlschema_KMC.xsd http://www-hunter.ch.cam.ac.uk/SSIP http://www-hunter.ch.cam.ac.uk/schema/SSIP_KMC.xsd">
+  <cml:molecule cml:id="IDQNBVFPZMCDDN-UHFFFAOYSA-N" ssip:stdInChIKey="IDQNBVFPZMCDDN-UHFFFAOYSA-N">
+    <cml:atomArray>
+      <cml:atom cml:id="a1" cml:elementType="C" cml:hydrogenCount="3" cml:x3="5.693000" cml:y3="11.082000" cml:z3="44.763000" cml:sybyl="C.3" cml:aipAtomType="C.3"/>
+      <cml:atom cml:id="a2" cml:elementType="C" cml:hydrogenCount="0" cml:x3="4.891000" cml:y3="12.203000" cml:z3="44.130000" cml:sybyl="C.ar" cml:aipAtomType="C.ar"/>
+      <cml:atom cml:id="a3" cml:elementType="C" cml:hydrogenCount="1" cml:x3="4.785000" cml:y3="12.337000" cml:z3="42.729000" cml:sybyl="C.ar" cml:aipAtomType="C.ar"/>
+      <cml:atom cml:id="a4" cml:elementType="C" cml:hydrogenCount="0" cml:x3="4.016000" cml:y3="13.394000" cml:z3="42.212000" cml:sybyl="C.ar" cml:aipAtomType="C.ar"/>
+      <cml:atom cml:id="a5" cml:elementType="C" cml:hydrogenCount="3" cml:x3="3.839000" cml:y3="13.613000" cml:z3="40.722000" cml:sybyl="C.3" cml:aipAtomType="C.3"/>
+      <cml:atom cml:id="a6" cml:elementType="N" cml:hydrogenCount="0" cml:x3="3.417000" cml:y3="14.264000" cml:z3="43.066000" cml:sybyl="N.ar" cml:aipAtomType="N.ar"/>
+      <cml:atom cml:id="a7" cml:elementType="C" cml:hydrogenCount="0" cml:x3="3.537000" cml:y3="14.119000" cml:z3="44.409000" cml:sybyl="C.ar" cml:aipAtomType="C.ar"/>
+      <cml:atom cml:id="a8" cml:elementType="N" cml:hydrogenCount="2" cml:x3="2.916000" cml:y3="14.990000" cml:z3="45.213000" cml:sybyl="N.pl3" cml:aipAtomType="N.pl3.aniline"/>
+      <cml:atom cml:id="a9" cml:elementType="N" cml:hydrogenCount="0" cml:x3="4.253000" cml:y3="13.091000" cml:z3="44.940000" cml:sybyl="N.ar" cml:aipAtomType="N.ar"/>
+      <cml:atom cml:id="a10" cml:elementType="H" cml:hydrogenCount="0" cml:x3="6.140300" cml:y3="10.460100" cml:z3="43.973500" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a11" cml:elementType="H" cml:hydrogenCount="0" cml:x3="5.030200" cml:y3="10.463300" cml:z3="45.385700" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a12" cml:elementType="H" cml:hydrogenCount="0" cml:x3="6.490300" cml:y3="11.509600" cml:z3="45.388700" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a13" cml:elementType="H" cml:hydrogenCount="0" cml:x3="5.285500" cml:y3="11.640200" cml:z3="42.066400" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a14" cml:elementType="H" cml:hydrogenCount="0" cml:x3="3.201600" cml:y3="14.493700" cml:z3="40.554000" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a15" cml:elementType="H" cml:hydrogenCount="0" cml:x3="3.365000" cml:y3="12.726800" cml:z3="40.274900" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a16" cml:elementType="H" cml:hydrogenCount="0" cml:x3="4.821800" cml:y3="13.777500" cml:z3="40.256200" cml:sybyl="H" cml:aipAtomType="H.soft"/>
+      <cml:atom cml:id="a17" cml:elementType="H" cml:hydrogenCount="0" cml:x3="2.374400" cml:y3="15.767600" cml:z3="44.809400" cml:sybyl="H" cml:aipAtomType="H.N"/>
+      <cml:atom cml:id="a18" cml:elementType="H" cml:hydrogenCount="0" cml:x3="2.979600" cml:y3="14.882800" cml:z3="46.235400" cml:sybyl="H" cml:aipAtomType="H.N"/>
+    </cml:atomArray>
+    <cml:bondArray>
+      <cml:bond cml:atomRefs2="a16 a5" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a15 a5" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a14 a5" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a5 a4" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a13 a3" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a4 a3" cml:order="2"/>
+      <cml:bond cml:atomRefs2="a4 a6" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a3 a2" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a6 a7" cml:order="2"/>
+      <cml:bond cml:atomRefs2="a10 a1" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a2 a1" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a2 a9" cml:order="2"/>
+      <cml:bond cml:atomRefs2="a7 a9" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a7 a8" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a1 a11" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a1 a12" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a17 a8" cml:order="1"/>
+      <cml:bond cml:atomRefs2="a8 a18" cml:order="1"/>
+    </cml:bondArray>
+  </cml:molecule>
+  <ssip:SurfaceInformation>
+    <ssip:Surfaces>
+      <ssip:Surface>
+        <ssip:TotalSurfaceArea ssip:unit="Å^2">165.0113297251629</ssip:TotalSurfaceArea>
+        <ssip:PositiveSurfaceArea ssip:unit="Å^2">93.2516993598786</ssip:PositiveSurfaceArea>
+        <ssip:NegativeSurfaceArea ssip:unit="Å^2">71.75963036528431</ssip:NegativeSurfaceArea>
+        <ssip:PositivePolarSurfaceArea ssip:unit="Å^2">12.01395285332745</ssip:PositivePolarSurfaceArea>
+        <ssip:NegativePolarSurfaceArea ssip:unit="Å^2">13.395585860122797</ssip:NegativePolarSurfaceArea>
+        <ssip:TotalNonPolarSurfaceArea ssip:unit="Å^2">139.60179101171266</ssip:TotalNonPolarSurfaceArea>
+        <ssip:PositiveNonPolarSurfaceArea ssip:unit="Å^2">81.23774650655116</ssip:PositiveNonPolarSurfaceArea>
+        <ssip:NegativeNonPolarSurfaceArea ssip:unit="Å^2">58.3640445051615</ssip:NegativeNonPolarSurfaceArea>
+        <ssip:NumberOFMEPSPoints>29022</ssip:NumberOFMEPSPoints>
+        <ssip:ElectrostaticPotentialMax ssip:unit="hartree">0.075556</ssip:ElectrostaticPotentialMax>
+        <ssip:ElectrostaticPotentialMin ssip:unit="hartree">-0.065841</ssip:ElectrostaticPotentialMin>
+        <ssip:VdWVolume ssip:unit="Å^3">138.22645120039826</ssip:VdWVolume>
+      </ssip:Surface>
+    </ssip:Surfaces>
+  </ssip:SurfaceInformation>
+  <ssip:SSIPs>
+    <ssip:SSIP ssip:value="-1.82" ssip:nearestAtomID="a2" ssip:aipAtomType="C.ar" cml:x3="6.27607097062" cml:y3="13.245601411713" cml:z3="44.168933607117" ssip:MEPvalue="-0.027995" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.81" ssip:nearestAtomID="a2" ssip:aipAtomType="C.ar" cml:x3="3.4446390515789997" cml:y3="11.238896609765" cml:z3="44.194096502643994" ssip:MEPvalue="-0.02786" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.47" ssip:nearestAtomID="a3" ssip:aipAtomType="C.ar" cml:x3="3.708028436497" cml:y3="10.934481719568002" cml:z3="42.382027234712005" ssip:MEPvalue="-0.022681" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.47" ssip:nearestAtomID="a3" ssip:aipAtomType="C.ar" cml:x3="6.374896892078" cml:y3="13.043735732345999" cml:z3="42.256685312138" ssip:MEPvalue="-0.022569" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.91" ssip:nearestAtomID="a4" ssip:aipAtomType="C.ar" cml:x3="2.568321939579" cml:y3="12.442672682781" cml:z3="42.256685312138" ssip:MEPvalue="-0.029398" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.92" ssip:nearestAtomID="a4" ssip:aipAtomType="C.ar" cml:x3="5.375978465187" cml:y3="14.44365866889" cml:z3="42.058866778467" ssip:MEPvalue="-0.029593" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-7.59" ssip:nearestAtomID="a6" ssip:aipAtomType="N.ar" cml:x3="2.8531239426250004" cml:y3="15.126294882182" cml:z3="42.606730605868" ssip:MEPvalue="-0.098273" ssip:isosurface="0.03" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="-0.8" ssip:nearestAtomID="a6" ssip:aipAtomType="N.ar" cml:x3="4.168959066338" cml:y3="15.824205260402" cml:z3="42.851944877544" ssip:MEPvalue="-0.012259" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-0.78" ssip:nearestAtomID="a6" ssip:aipAtomType="N.ar" cml:x3="1.69532964667" cml:y3="14.102024643575" cml:z3="42.805298454170995" ssip:MEPvalue="-0.012076" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.85" ssip:nearestAtomID="a7" ssip:aipAtomType="C.ar" cml:x3="4.959126162738" cml:y3="15.026524379779" cml:z3="44.365026494591" ssip:MEPvalue="-0.028425" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.8" ssip:nearestAtomID="a7" ssip:aipAtomType="C.ar" cml:x3="2.1935413253380003" cml:y3="13.098318752365" cml:z3="44.472926214068" ssip:MEPvalue="-0.027713" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.63" ssip:nearestAtomID="a8" ssip:aipAtomType="N.pl3.aniline" cml:x3="1.256071990041" cml:y3="14.534427870523" cml:z3="45.619604617960995" ssip:MEPvalue="-0.025026" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-1.6" ssip:nearestAtomID="a8" ssip:aipAtomType="N.pl3.aniline" cml:x3="3.879468025895" cml:y3="16.40777848094" cml:z3="45.646936080834" ssip:MEPvalue="-0.024578" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-7.75" ssip:nearestAtomID="a9" ssip:aipAtomType="N.ar" cml:x3="4.363932744457" cml:y3="12.934012998104" cml:z3="46.051510947706" ssip:MEPvalue="-0.100149" ssip:isosurface="0.03" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="-0.81" ssip:nearestAtomID="a9" ssip:aipAtomType="N.ar" cml:x3="5.425631143097" cml:y3="14.036145811314" cml:z3="45.821150145243" ssip:MEPvalue="-0.012478" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="-0.73" ssip:nearestAtomID="a9" ssip:aipAtomType="N.ar" cml:x3="3.047381644263" cml:y3="12.191542741422" cml:z3="45.829348684504" ssip:MEPvalue="-0.011291" ssip:isosurface="0.002" ssip:aipAreaFraction="0.5"/>
+    <ssip:SSIP ssip:value="0.85" ssip:nearestAtomID="a10" ssip:aipAtomType="H.soft" cml:x3="6.494743840684" cml:y3="10.014450883129" cml:z3="43.365600586957" ssip:MEPvalue="0.072745" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.8" ssip:nearestAtomID="a11" ssip:aipAtomType="H.soft" cml:x3="4.532314219972" cml:y3="10.006559795705" cml:z3="45.861105654628" ssip:MEPvalue="0.070309" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.8" ssip:nearestAtomID="a12" ssip:aipAtomType="H.soft" cml:x3="7.0892921922020005" cml:y3="11.851426395743001" cml:z3="45.841915050723" ssip:MEPvalue="0.070076" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.91" ssip:nearestAtomID="a13" ssip:aipAtomType="H.soft" cml:x3="5.651934745500999" cml:y3="11.095581190386001" cml:z3="41.558658514978" ssip:MEPvalue="0.075466" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.68" ssip:nearestAtomID="a14" ssip:aipAtomType="H.soft" cml:x3="2.75105363698" cml:y3="15.171909939582001" cml:z3="40.43098550304" ssip:MEPvalue="0.064203" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.87" ssip:nearestAtomID="a15" ssip:aipAtomType="H.soft" cml:x3="2.9998975336990004" cml:y3="12.064552432492999" cml:z3="39.930713209134" ssip:MEPvalue="0.073288" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="0.87" ssip:nearestAtomID="a16" ssip:aipAtomType="H.soft" cml:x3="5.574677020209" cml:y3="13.893111914099" cml:z3="39.924311754965" ssip:MEPvalue="0.073337" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="2.59" ssip:nearestAtomID="a17" ssip:aipAtomType="H.N" cml:x3="2.0060888399200003" cml:y3="16.340309471794" cml:z3="44.48393627073" ssip:MEPvalue="0.155606" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+    <ssip:SSIP ssip:value="2.56" ssip:nearestAtomID="a18" ssip:aipAtomType="H.N" cml:x3="3.037229912695" cml:y3="14.772285523545" cml:z3="46.982636509127" ssip:MEPvalue="0.154849" ssip:isosurface="0.0104" ssip:aipAreaFraction="1.0"/>
+  </ssip:SSIPs>
+</ssip:SSIPMolecule>

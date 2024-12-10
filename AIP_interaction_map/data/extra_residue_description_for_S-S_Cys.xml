@@ -1,0 +1,23 @@
+    <Residue name="CYM">
+      <Atom name="N" type="protein-N" charge="-0.4157" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="H" type="protein-H" charge="0.2719" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="CA" type="protein-CT" charge="-0.0351" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="HA" type="protein-H1" charge="0.0508" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="CB" type="protein-6c" charge="-0.2413" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="HB3" type="protein-H1" charge="0.1122" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="HB2" type="protein-H1" charge="0.1122" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="SG" type="protein-SH" charge="-0.8844" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="C" type="protein-C" charge="0.5973" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Atom name="O" type="protein-O" charge="-0.5679" ssip_charge="0.0" fraction="0" isosurface="0"/>   
+      <Bond atomName1="N" atomName2="H"/>   
+      <Bond atomName1="N" atomName2="CA"/>   
+      <Bond atomName1="CA" atomName2="HA"/>   
+      <Bond atomName1="CA" atomName2="CB"/>   
+      <Bond atomName1="CA" atomName2="C"/>   
+      <Bond atomName1="CB" atomName2="HB3"/>   
+      <Bond atomName1="CB" atomName2="HB2"/>   
+      <Bond atomName1="CB" atomName2="SG"/>   
+      <Bond atomName1="C" atomName2="O"/>   
+      <ExternalBond atomName="N"/>   
+      <ExternalBond atomName="C"/>   
+    </Residue>

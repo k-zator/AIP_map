@@ -1,0 +1,113 @@
+<ForceField>
+  <AtomTypes>
+    <Type class="a1" name="ligand-a1" element="C" mass="12.011"/>
+    <Type class="a2" name="ligand-a2" element="C" mass="12.011"/>
+    <Type class="a3" name="ligand-a3" element="C" mass="12.011"/>
+    <Type class="a4" name="ligand-a4" element="C" mass="12.011"/>
+    <Type class="a5" name="ligand-a5" element="C" mass="12.011"/>
+    <Type class="a6" name="ligand-a6" element="N" mass="14.007"/>
+    <Type class="a7" name="ligand-a7" element="C" mass="12.011"/>
+    <Type class="a8" name="ligand-a8" element="N" mass="14.007"/>
+    <Type class="a9" name="ligand-a9" element="N" mass="14.007"/>
+    <Type class="a10" name="ligand-a10" element="H" mass="1.008"/>
+    <Type class="a11" name="ligand-a11" element="H" mass="1.008"/>
+    <Type class="a12" name="ligand-a12" element="H" mass="1.008"/>
+    <Type class="a13" name="ligand-a13" element="H" mass="1.008"/>
+    <Type class="a14" name="ligand-a14" element="H" mass="1.008"/>
+    <Type class="a15" name="ligand-a15" element="H" mass="1.008"/>
+    <Type class="a16" name="ligand-a16" element="H" mass="1.008"/>
+    <Type class="a17" name="ligand-a17" element="H" mass="1.008"/>
+    <Type class="a18" name="ligand-a18" element="H" mass="1.008"/>
+    <Type class="ssip" name="ssip" mass="0.0"/>
+  </AtomTypes>
+  <Residues>
+    <Residue name="MOL">
+      <Atom name="a1" type="ligand-a1" ssip_charge="0.8" fraction="0" isosurface="0"/>
+      <Atom name="a2" type="ligand-a2" ssip_charge="-1.81" fraction="0" isosurface="0"/>
+      <Atom name="a3" type="ligand-a3" ssip_charge="-1.47" fraction="0" isosurface="0"/>
+      <Atom name="a4" type="ligand-a4" ssip_charge="-1.92" fraction="0" isosurface="0"/>
+      <Atom name="a5" type="ligand-a5" ssip_charge="0.68" fraction="0" isosurface="0"/>
+      <Atom name="a6" type="ligand-a6" ssip_charge="-0.78" fraction="0" isosurface="0"/>
+      <Atom name="a7" type="ligand-a7" ssip_charge="-1.8" fraction="0" isosurface="0"/>
+      <Atom name="a8" type="ligand-a8" ssip_charge="-1.6" fraction="0" isosurface="0"/>
+      <Atom name="a9" type="ligand-a9" ssip_charge="-0.73" fraction="0" isosurface="0"/>
+      <Atom name="a10" type="ligand-a10" ssip_charge="0.85" fraction="0" isosurface="0"/>
+      <Atom name="a11" type="ligand-a11" ssip_charge="0.8" fraction="0" isosurface="0"/>
+      <Atom name="a12" type="ligand-a12" ssip_charge="0.8" fraction="0" isosurface="0"/>
+      <Atom name="a13" type="ligand-a13" ssip_charge="0.91" fraction="0" isosurface="0"/>
+      <Atom name="a14" type="ligand-a14" ssip_charge="0.68" fraction="0" isosurface="0"/>
+      <Atom name="a15" type="ligand-a15" ssip_charge="0.87" fraction="0" isosurface="0"/>
+      <Atom name="a16" type="ligand-a16" ssip_charge="0.87" fraction="0" isosurface="0"/>
+      <Atom name="a17" type="ligand-a17" ssip_charge="2.59" fraction="0" isosurface="0"/>
+      <Atom name="a18" type="ligand-a18" ssip_charge="2.56" fraction="0" isosurface="0"/>
+      <Bond atomName1="a16" atomName2="a5"/>
+      <Bond atomName1="a15" atomName2="a5"/>
+      <Bond atomName1="a14" atomName2="a5"/>
+      <Bond atomName1="a5" atomName2="a4"/>
+      <Bond atomName1="a13" atomName2="a3"/>
+      <Bond atomName1="a4" atomName2="a3"/>
+      <Bond atomName1="a4" atomName2="a6"/>
+      <Bond atomName1="a3" atomName2="a2"/>
+      <Bond atomName1="a6" atomName2="a7"/>
+      <Bond atomName1="a10" atomName2="a1"/>
+      <Bond atomName1="a2" atomName2="a1"/>
+      <Bond atomName1="a2" atomName2="a9"/>
+      <Bond atomName1="a7" atomName2="a9"/>
+      <Bond atomName1="a7" atomName2="a8"/>
+      <Bond atomName1="a1" atomName2="a11"/>
+      <Bond atomName1="a1" atomName2="a12"/>
+      <Bond atomName1="a17" atomName2="a8"/>
+      <Bond atomName1="a8" atomName2="a18"/>
+      <Atom ssip_charge="-1.82" fraction="0.5" isosurface="0.002" name="M0_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M0_C.ar" atomName1="a2" atomName2="a1" atomName3="a3" weight12="-0.0" weight13="-0.1" weightCross="10.0"/>
+      <Atom ssip_charge="-1.81" fraction="0.5" isosurface="0.002" name="M1_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M1_C.ar" atomName1="a2" atomName2="a1" atomName3="a3" weight12="-0.0" weight13="-0.1" weightCross="-10.0"/>
+      <Atom ssip_charge="-1.47" fraction="0.5" isosurface="0.002" name="M2_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M2_C.ar" atomName1="a3" atomName2="a2" atomName3="a4" weight12="-0.4" weight13="-0.4" weightCross="10.0"/>
+      <Atom ssip_charge="-1.47" fraction="0.5" isosurface="0.002" name="M3_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M3_C.ar" atomName1="a3" atomName2="a2" atomName3="a4" weight12="-0.5" weight13="-0.3" weightCross="-10.0"/>
+      <Atom ssip_charge="-1.91" fraction="0.5" isosurface="0.002" name="M4_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M4_C.ar" atomName1="a4" atomName2="a3" atomName3="a5" weight12="-0.1" weight13="-0.0" weightCross="-10.0"/>
+      <Atom ssip_charge="-1.92" fraction="0.5" isosurface="0.002" name="M5_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M5_C.ar" atomName1="a4" atomName2="a3" atomName3="a5" weight12="-0.0" weight13="0.1" weightCross="10.0"/>
+      <Atom ssip_charge="-7.59" fraction="1.0" isosurface="0.03" name="M6_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M6_N.ar" atomName1="a6" atomName2="a4" atomName3="a7" weight12="-0.8" weight13="-0.9" weightCross="-0.0"/>
+      <Atom ssip_charge="-0.8" fraction="0.5" isosurface="0.002" name="M7_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M7_N.ar" atomName1="a6" atomName2="a4" atomName3="a7" weight12="-0.7" weight13="-0.6" weightCross="-10.0"/>
+      <Atom ssip_charge="-0.78" fraction="0.5" isosurface="0.002" name="M8_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M8_N.ar" atomName1="a6" atomName2="a4" atomName3="a7" weight12="-0.7" weight13="-0.6" weightCross="9.0"/>
+      <Atom ssip_charge="-1.85" fraction="0.5" isosurface="0.002" name="M9_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M9_C.ar" atomName1="a7" atomName2="a6" atomName3="a8" weight12="-0.0" weight13="-0.1" weightCross="11.0"/>
+      <Atom ssip_charge="-1.8" fraction="0.5" isosurface="0.002" name="M10_C.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M10_C.ar" atomName1="a7" atomName2="a6" atomName3="a8" weight12="-0.1" weight13="-0.0" weightCross="-11.0"/>
+      <Atom ssip_charge="-1.63" fraction="0.5" isosurface="0.002" name="M11_N.pl3.aniline" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M11_N.pl3.aniline" atomName1="a8" atomName2="a7" atomName3="a17" weight12="-0.5" weight13="0.0" weightCross="-14.0"/>
+      <Atom ssip_charge="-1.6" fraction="0.5" isosurface="0.002" name="M12_N.pl3.aniline" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M12_N.pl3.aniline" atomName1="a8" atomName2="a7" atomName3="a17" weight12="-0.5" weight13="0.0" weightCross="13.0"/>
+      <Atom ssip_charge="-7.75" fraction="1.0" isosurface="0.03" name="M13_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M13_N.ar" atomName1="a9" atomName2="a2" atomName3="a7" weight12="-0.8" weight13="-0.9" weightCross="0.0"/>
+      <Atom ssip_charge="-0.81" fraction="0.5" isosurface="0.002" name="M14_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M14_N.ar" atomName1="a9" atomName2="a2" atomName3="a7" weight12="-0.7" weight13="-0.5" weightCross="9.0"/>
+      <Atom ssip_charge="-0.73" fraction="0.5" isosurface="0.002" name="M15_N.ar" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M15_N.ar" atomName1="a9" atomName2="a2" atomName3="a7" weight12="-0.7" weight13="-0.6" weightCross="-9.0"/>
+      <Atom ssip_charge="0.85" fraction="1.0" isosurface="0.0104" name="M16_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M16_H.soft" atomName1="a10" atomName2="a1" atomName3="a2" weight12="-0.8" weight13="0.0" weightCross="-0.0"/>
+      <Atom ssip_charge="0.8" fraction="1.0" isosurface="0.0104" name="M17_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M17_H.soft" atomName1="a11" atomName2="a1" atomName3="a2" weight12="-0.8" weight13="0.0" weightCross="0.0"/>
+      <Atom ssip_charge="0.8" fraction="1.0" isosurface="0.0104" name="M18_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M18_H.soft" atomName1="a12" atomName2="a1" atomName3="a2" weight12="-0.8" weight13="0.0" weightCross="0.0"/>
+      <Atom ssip_charge="0.91" fraction="1.0" isosurface="0.0104" name="M19_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M19_H.soft" atomName1="a13" atomName2="a3" atomName3="a2" weight12="-0.8" weight13="-0.0" weightCross="-0.0"/>
+      <Atom ssip_charge="0.68" fraction="1.0" isosurface="0.0104" name="M20_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M20_H.soft" atomName1="a14" atomName2="a5" atomName3="a4" weight12="-0.8" weight13="0.0" weightCross="-0.0"/>
+      <Atom ssip_charge="0.87" fraction="1.0" isosurface="0.0104" name="M21_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M21_H.soft" atomName1="a15" atomName2="a5" atomName3="a4" weight12="-0.7" weight13="-0.0" weightCross="-0.0"/>
+      <Atom ssip_charge="0.87" fraction="1.0" isosurface="0.0104" name="M22_H.soft" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M22_H.soft" atomName1="a16" atomName2="a5" atomName3="a4" weight12="-0.8" weight13="0.0" weightCross="-0.0"/>
+      <Atom ssip_charge="2.59" fraction="1.0" isosurface="0.0104" name="M23_H.N" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M23_H.N" atomName1="a17" atomName2="a8" atomName3="a7" weight12="-0.8" weight13="0.0" weightCross="0.0"/>
+      <Atom ssip_charge="2.56" fraction="1.0" isosurface="0.0104" name="M24_H.N" type="ssip"/>
+      <VirtualSite type="outOfPlane" siteName="M24_H.N" atomName1="a18" atomName2="a8" atomName3="a7" weight12="-0.8" weight13="0.0" weightCross="0.0"/>
+    </Residue>
+  </Residues>
+</ForceField>
