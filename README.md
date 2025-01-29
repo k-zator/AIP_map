@@ -1,84 +1,87 @@
-# hunter_scoring
+# AIP_map
 
-Pre-release code for pairing AIPs in guest-host complexes.
-Author: Katarzyna Zator, kz265
+Module for pairing AIPs in dimeric guest-host and protein-ligand complexes.
+
+Author: Katarzyna Zator
 
 #### Environment setup.
 
 Clone the repository:
 
-    git clone git@gitlab.developers.cam.ac.uk:ch/hunter/hunter_scoring.git
-    cd hunter_scoring
+    git clone https://github.com/k-zator/AIP_map.git
+    cd AIP_map
 
 Then install this environment instead (based on python 3.6):
 
-        conda create --name openmm --file spec-file.txt
-        conda activate openmm
+        conda env create -f environment.yml
+        conda activate aip_map
 
-#### Code running.
+#### Calculation.
 
-The scoring algorithm is currently set up to work in an IDE: jupyter notebook.
-To open it:
+The code is as a module so that the entire calculation is available as CLI.
+The calculation requires two molecular structure input files and two AIP files. Molecular files should be in the PDB format, and AIP files can be calculated using the AIP module (https://github.com/k-zator/AIP). To calculate:
 
-        jupyter-notebook
+        python -m AIP_interaction_map.score -p1 compA.pdb -p2 compB.pdb -a1 aipA.xml -a2 aipB.xml -w A_B 
 
-There are a series of available notebooks, or you can create your own.
-In any case, the key command is:
-
-        from ssipscore.getScoring import Scoring
-        self = Scoring(PDB_file1, PDB_file2)
-
-where PDB files need to have their full paths specified and they cannot be in the same folder.
-It is an expectation that the ssip.xml file (named so) is also present in that folder and will
-be used as the AIP source. The order technically matters as the first mol becomes ligand (L), and the latter residue (R).
+The module produces a folder (A_B) with the PDB output (A_B.pdb), a jmol script (A_B_script) to visualise the AIP-AIP interactions, and a CSV file (A_B.csv) that contains the list of AIP-AIP interactions, the relevant AIPs, and their 
+contributions to the binding free energy.
 
 #### Further options.
 
-There are a series of default-specified parameters:
+There are a series of additional parameters which can further refine the search:
 
-1. max_aip_dist=0.10 - max distance between AIPs to allow a contact, it has a very precaious scaling hence do not go beyond 0.20,
+  -h, --help            show this help message and exit
+  --PDB_file1 PDB_file1, -p1 PDB_file1
+                        PDB file with first of the interacting structures
+  --PDB_file2 PDB_file2, -p2 PDB_file2
+                        PDB file with second of the interacting structures
+  --aip_file1 aip_file1, -a1 aip_file1
+                        AIP file with first of the interacting structures
+  --aip_file2 aip_file2, -a2 aip_file2
+                        AIP file with second of the interacting structures
+  --max_aip_dist MAX_AIP_DIST, -d MAX_AIP_DIST
+                        default: 0.15, the maximum distance allowed for aip-aip contact to be considered an interaction
+  --solvent SOLVENT, -s SOLVENT
+                        default: chloroform, determines the solvent in which the interaction takes place, see full list in the paper SI
+  --mbpa                
+                        if present, uses the maximum bipartite algorithm rather than the custom branching algorithm
+  --protein             
+                        if present, it treats the host, second structure, as a protein and uses default AIP parametrisation for protein
+  --bypass_at1          
+                        if present, it treats the AIP-AIP contacts closer than 1 angstrom as preferential and does a first-pass of pairing for those alone, a speed-up for large systems
+  --write WRITE, -w WRITE
+                        if used, determines name for the jmol and csv file instead of {PDB1}_{PDB2}
+  --lower LOWER, -low LOWER
+                        default: 0.5 kJ/mol, AIP pairs with an absolute value that is less than this value are considered low and are plotted as small spheres
+  --strong STRONG, -str STRONG
+                        default: -5 kJ/mol, AIP pairs more negative than this value are considered strongly attractive and are plotted as dark green spheres
 
-2. from_PDB=True - both guest and host are specified by PDB and ssip.xml explicitly. Otherwise, it assumes protein-host and requires only the PDB (prepped with binding_site.py to match atom types) and uses pre-calculated AIPs,
+They are saved so that they do not need to be compiled every time but if deleted, but otherwise will just be written out again. The process length is proportional to molecular size. The AIP-AIP pairings can be visualised with:
 
-3. bypass_at1=False - an alternative algorithm for searching for AIP contacts with primary search at 0.08 nm, so that those have the algoritm performs three concentric searches. First at 0.08, then at max_aip_dist, then for remainder at max_aip_dist+ext_upon_desolv,
+        jmol A_B_script
 
-4. solvent="chloroform" - solvent in which the interactions are considered, currently the choice is between chloroform and water
+#### Protein-ligand complexes.
 
-5. probe_radius=0.2 - distance beyond the vdW radius at which SASAs are calculated,
+It is possible to investigate protein-ligand complexes with the AIP_interaction_map module as the protein can be 
+treated as an embedded series of amino acids whose AIPs have been precalculated. It requires producing a custom 
+description of the protein binding site (primarily to minimise the calculation cost and ease visualisation) and
+forcefield files for mapping the AIPs onto the structure with:
 
-6. frac_to_desolv=0.5 - fraction of desolvated SASA at which the atom is considered desolvated, this is per atom so far hence 2nd
-   site corresponds to a constant of 0.7 (when available) and it does not reconise full desolvation of particular non-contiguous faces,
+        python -m AIP_interaction_map.create_bs distance 2 -p protein.pdb -o .
+        python -m AIP_interaction_map.create_ff.py -s ligand.xml -v -o .
 
-7. ext_upon_desolv=0.03 - extension to the max_aip_dist at which other contacts within the desolvation cavity are searched for.
+This produces a binding_site.pdb, and ligand_vs.ff and ligand_custom.xml which contain the description of the protein
+and which will be implicitly read by the AIP_interaction_map.score module. The command to produce the AIP-AIP pairings
+is now:
 
-The code does create a DataDicts.txt and combined.pdb files in each respective folder for guest_host pairing, and ligand_vs_ff.xml and ligand_vs_custom.xml for guest_protein option.
-They are saved so that they do not need to be compiled every time but if deleted, but otherwise will just be written out again. The process length is proportional to molecular size.
+        python -m AIP_interaction_map.score -p1 ligand.pdb -p2 binding_site.pdb -a1 ligand.xml --protein -w A_B 
 
-#### Useful commands.
+Similarly, it produces the protein_ligand.pdb, jmol script, and a csv table of results.
 
-Of notable interest will be particular objects:
 
-        #Dataframe of present interactions
-        self.interaction_df
+Who do I talk to?
+Any queries please contact Katarzyna Zator, kz265@cam.ac.uk
 
-which also can be saved: self.interaction_df.to_csv(f"{name}.csv").
-It contains information about the atom-atom and AIP-AIP contacts, namely the distances, indices (L, R for atoms, or \_AIP), Atom types, AIP fractions, AIP values, the contribution to overall binding: ddG (and ddG_sc: scaled by AIP fractions)
-
-The indices are maintained througout the algorithm but the R molecule will have its shifted to ensure they are all unique. This might make it slightly harder to see the contacts, hence for visualisation:
-
-        from ssipscore.create_jmol_vis import create_jmol_vis, create_ip_vis
-        #visualisation of all AIPs without interacting ones bein colour-coded:
-        create_jmol_vis
-        #visualisation of the AIP contacts (as mid-point between interacting AIPs)
-        create_ip_vis(self, f"{name}")
-        #this will create a .pdb and a jmol _script. To see the contacts, run
-        jmol {name}_script
-
-Additionally, because for the guest-host contacts the interacting surface is frequently concave, more than just the interacting AIPs should be desolvated. The total desolvation energy (of both interacting and hidden but not interacting AIPs), identity of the non-interacting but hidden AIPs, and any contacts that could be made with those (i.e. at the extended aip-aip distance) are available.
-
-        #Desolvation energy for all sites with sufficient SASA change
-        self.desolv_energy
-        #AIPs that are desolvated upon complexation but did not have a contact found
-        self.desolvated_AIPs
-        #Additional interactions present beyond cut-off but within the desolvated cavity
-        self.non_polar_add
+License
+© Katarzyna Zator, Maria Chiara Storer, Christopher Hunter at the University of Cambridge
+This is released under an AGPLv3 license for academic use.

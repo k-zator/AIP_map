@@ -1,4 +1,4 @@
-name: scoring_test
+name: aip_map
 channels:
   - anaconda
   - rdkit

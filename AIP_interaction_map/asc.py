@@ -12,7 +12,7 @@ def calculate_association_energy(epsilon_i, epsilon_j, solvent, temperature=298.
     K_vdW = 0.5 * np.exp(-EvdW * np.power(10, 3) / (GAS_CONSTANT * temperature))
 
     #including repulsion
-    interaction_energy = epsilon_i * epsilon_j # if epsilon_i * epsilon_j < 0.0 else 0.0
+    interaction_energy = epsilon_i * epsilon_j if epsilon_i * epsilon_j < 0.0 else 0.0
     K = 0.5 * np.exp(-(interaction_energy + EvdW) * np.power(10, 3) / (GAS_CONSTANT * temperature))
 
     association_constant = K + K_vdW
@@ -53,7 +53,7 @@ def calculate_binding_energy(epsilon_i, epsilon_j, solvent, temperature=298.0):
     K_vdW = 0.5 * np.exp(-EvdW * np.power(10, 3) / (GAS_CONSTANT * temperature))
 
     #including repulsion
-    interaction_energy = epsilon_i * epsilon_j #if epsilon_i * epsilon_j < 0.0 else 0.0
+    interaction_energy = epsilon_i * epsilon_j if epsilon_i * epsilon_j < 0.0 else 0.0
     K = 0.5 * np.exp(-(interaction_energy + EvdW) * np.power(10, 3) / (GAS_CONSTANT * temperature))
 
     association_constant = K + K_vdW
