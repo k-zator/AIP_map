@@ -1,5 +1,8 @@
 # AIP_map
 
+[![CI](https://github.com/k-zator/AIP_map/actions/workflows/tests.yml/badge.svg)](https://github.com/k-zator/AIP_map/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/k-zator/AIP_map/branch/master/graph/badge.svg)](https://codecov.io/gh/k-zator/AIP_map)
+
 Module for pairing AIPs in dimeric guest-host and protein-ligand complexes.
 
 Author: Katarzyna Zator
