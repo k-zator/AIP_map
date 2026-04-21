@@ -44,13 +44,64 @@ def _bonded_to_atom(topology):
 
 
 def _get_template_match(forcefield, residue, bonded_to_atom, ignore_external_bonds):
+    template_signatures = getattr(forcefield, "_templateSignatures", None)
     try:
         return forcefield._getResidueTemplateMatches(
             residue,
             bonded_to_atom,
-            forcefield._templateSignatures,
+            template_signatures,
             ignoreExternalBonds=ignore_external_bonds,
             ignoreExtraParticles=True,
+        )
+    except TypeError as exc:
+        if "ignoreExtraParticles" not in str(exc) and "ignoreExternalBonds" not in str(exc):
+            raise
+    except Exception:
+        return None
+
+    try:
+        return forcefield._getResidueTemplateMatches(
+            residue,
+            bonded_to_atom,
+            template_signatures,
+            ignoreExternalBonds=ignore_external_bonds,
+        )
+    except TypeError as exc:
+        if "ignoreExternalBonds" not in str(exc):
+            raise
+    except Exception:
+        return None
+
+    try:
+        return forcefield._getResidueTemplateMatches(
+            residue,
+            bonded_to_atom,
+            template_signatures,
+            ignore_external_bonds,
+            True,
+        )
+    except TypeError:
+        pass
+    except Exception:
+        return None
+
+    try:
+        return forcefield._getResidueTemplateMatches(
+            residue,
+            bonded_to_atom,
+            template_signatures,
+            ignore_external_bonds,
+        )
+    except TypeError:
+        pass
+    except Exception:
+        return None
+
+    try:
+        return forcefield._getResidueTemplateMatches(
+            residue,
+            bonded_to_atom,
+            template_signatures,
         )
     except Exception:
         return None
@@ -142,8 +193,6 @@ def apply_openmm_compat_patches():
                 ignoreExternalBonds,
             )
         except ValueError as exc:
-            if "extra particles" not in str(exc):
-                raise
             if not _fallback_add_extra_particles(self, forcefield, ignoreExternalBonds):
                 raise exc
             return None
