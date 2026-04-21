@@ -26,6 +26,10 @@ jobs:
         shell: bash -l {0}
         run: coverage html
 
+      - name: Generate coverage XML
+        shell: bash -l {0}
+        run: coverage xml
+
       - name: Upload coverage report artifact
         uses: actions/upload-artifact@v4
         with:
@@ -35,4 +39,4 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          files: .coverage
+          files: coverage.xml
