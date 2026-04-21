@@ -7,6 +7,32 @@ from simtk.openmm import app
 _ORIGINAL_ADD_EXTRA_PARTICLES = None
 
 
+def _call_original_add_extra_particles(modeller, forcefield, ignore_external_bonds):
+    try:
+        return _ORIGINAL_ADD_EXTRA_PARTICLES(
+            modeller,
+            forcefield,
+            ignoreExternalBonds=ignore_external_bonds,
+        )
+    except TypeError as exc:
+        if "ignoreExternalBonds" not in str(exc):
+            raise
+
+    try:
+        return _ORIGINAL_ADD_EXTRA_PARTICLES(
+            modeller,
+            forcefield,
+            ignore_external_bonds,
+        )
+    except TypeError as exc:
+        if not ignore_external_bonds:
+            raise
+        if "positional" not in str(exc) and "takes" not in str(exc):
+            raise
+
+    return _ORIGINAL_ADD_EXTRA_PARTICLES(modeller, forcefield)
+
+
 def _bonded_to_atom(topology):
     bonded_to_atom = {}
     for atom in topology.atoms():
@@ -110,10 +136,10 @@ def apply_openmm_compat_patches():
     @functools.wraps(_ORIGINAL_ADD_EXTRA_PARTICLES)
     def _compat_add_extra_particles(self, forcefield, ignoreExternalBonds=False):
         try:
-            return _ORIGINAL_ADD_EXTRA_PARTICLES(
+            return _call_original_add_extra_particles(
                 self,
                 forcefield,
-                ignoreExternalBonds=ignoreExternalBonds,
+                ignoreExternalBonds,
             )
         except ValueError as exc:
             if "extra particles" not in str(exc):
