@@ -78,9 +78,25 @@ class TestVisualisation(unittest.TestCase):
         self.pdb4 = f"{FIXTURE_DIR}4llx/binding_site.pdb"
         self.aip3 = f"{FIXTURE_DIR}4llx/ssip.xml"
         self.correct_jmol = f"{FIXTURE_DIR}4llx/4llx_script"
+
+    @staticmethod
+    def _normalized_script(script_path):
+        with open(script_path, "r") as handle:
+            lines = list(handle)
+        normalized = []
+        for line in lines:
+            if 'load /*file*/' in line:
+                pdb_name = os.path.basename(line.split('"')[1])
+                normalized.append(f'  load /*file*/"./{pdb_name}";\n')
+            else:
+                normalized.append(line)
+        return normalized
     
     def test_visualisation(self):
         k = Scoring(self.pdb3, self.pdb4, self.aip3, "water", protein_host=True, max_aip_dist=0.18)
         create_ip_vis(k, "new_jmol", f"{FIXTURE_DIR}")
-        self.assertListEqual(list(open(f"{FIXTURE_DIR}/new_jmol_script")), list(open(self.correct_jmol)))
+        self.assertListEqual(
+            self._normalized_script(f"{FIXTURE_DIR}/new_jmol_script"),
+            self._normalized_script(self.correct_jmol),
+        )
         ## line by line

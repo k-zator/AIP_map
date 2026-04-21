@@ -73,6 +73,7 @@ class ScoringTraj():
         integrator = VerletIntegrator(1*unit.femtosecond)
         simulation = app.Simulation(modeller.topology, system, integrator)
         simulation.context.setPositions(modeller.positions)
+        simulation.context.computeVirtualSites()
         temp_folder = tempfile.mkdtemp()+"/"
         simulation.saveState(temp_folder+"state.xml")
         mtop = md.Topology.from_openmm(modeller.topology)

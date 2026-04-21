@@ -30,6 +30,7 @@ def create_parser():
         )
     parser.add_argument(
         '--output',
+        '--out',
         '-o',
         dest='out',
         type=str,

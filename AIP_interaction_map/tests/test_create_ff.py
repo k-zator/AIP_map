@@ -16,7 +16,7 @@ class TestParser(unittest.TestCase):
         self.parser = create_parser()
 
     def test_parsing_vs(self):
-        parsed = self.parser.parse_args()
+        parsed = self.parser.parse_args([])
         self.assertEqual(parsed.vs, False)
         parsed = self.parser.parse_args(['--vs'])
         self.assertEqual(parsed.vs, True)
